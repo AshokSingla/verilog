@@ -1,6 +1,7 @@
 module sr_latch (
     q,qbar,s,r,clock
 );
+    // truth table based
 output reg q,qbar;
 input s,r,clock;
 
