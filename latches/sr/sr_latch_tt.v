@@ -46,6 +46,10 @@ nand(rp,r,clock);
 nand(q,sp,qbar);
 nand(qbar,rp,q); 
 
+
+// the circuit will give different outputs for the case "11" depending on the clocking.
+// since the output varies in that case, we can explicitly say that the case is forbidden case.
+    
 endmodule
 
 // The circuit used for the above latch is available at https://tse1.mm.bing.net/th?id=OIP.v-QPkEd_78iukAERZkI2tQAAAA&pid=Api&P=0
