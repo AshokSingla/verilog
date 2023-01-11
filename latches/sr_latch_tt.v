@@ -1,7 +1,7 @@
-module sr_latch (
+module sr_latch_tt ( 
     q,qbar,s,r,clock
 );
-    // truth table based
+// truth table based
 output reg q,qbar;
 input s,r,clock;
 
@@ -30,3 +30,19 @@ always @(clock) begin
 end
     
 endmodule
+
+module sr_latch_gates (
+    q,qbar,s,r,clock
+);
+output q,qbar;
+input s,r,clock;
+wire sp,rp;
+
+
+nand(sp,s,clock);
+nand(rp,r,clock);
+nand(q,sp,qbar);
+nand(qbar,rp,q); 
+
+endmodule
+
