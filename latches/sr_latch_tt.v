@@ -46,3 +46,4 @@ nand(qbar,rp,q);
 
 endmodule
 
+// The circuit used for the above latch is available at https://tse1.mm.bing.net/th?id=OIP.v-QPkEd_78iukAERZkI2tQAAAA&pid=Api&P=0
