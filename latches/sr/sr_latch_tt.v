@@ -1,3 +1,5 @@
+// for the sake of using the same test bench clock is used which may be replaced by the enable as per the need in the scope of this file.
+
 module sr_latch_tt ( 
     q,qbar,s,r,clock
 );
