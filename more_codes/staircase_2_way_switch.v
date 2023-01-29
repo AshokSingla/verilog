@@ -15,7 +15,7 @@ end
     
 endmodule
 
-module switch (
+module switch ( // without using reg
     output out,
     input in1,in2
 );
