@@ -9,6 +9,7 @@ endmodule
 
 
 module universal_shift_register(out, in, in_r, in_l, clk, reset, sel1, sel0);
+// sel1, sel0 act as mode changers for the universal shift register
 // 00 means memory
 // 01 means shift left
 // 10 means shift right
